@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Guide | StitchCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .measurement-tab {
+            transition: all 0.3s ease;
+        }
+        .measurement-tab:hover {
+            background-color: #f3f4f6;
+        }
+        .measurement-tab.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .measurement-step:hover .step-number {
+            background-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-cut text-2xl text-blue-600"></i>
+                <span class="text-xl font-bold text-gray-800">StitchCraft</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="tailors.html" class="text-gray-600 hover:text-blue-600">Find Tailors</a>
+                <a href="measurement.html" class="text-blue-600 font-medium">Measurement Guide</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="booking.html" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Book Now</a>
+                <button class="md:hidden text-gray-600" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white py-2 px-4 shadow-lg" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="tailors.html" class="block py-2 text-gray-600 hover:text-blue-600">Find Tailors</a>
+            <a href="measurement.html" class="block py-2 text-blue-600">Measurement Guide</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="booking.html" class="block py-2 text-blue-600 font-medium">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Measurement Guide Header -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Measurement Guide</h1>
+                <p class="text-xl max-w-3xl mx-auto">Learn how to take accurate measurements at home for perfectly fitted garments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Measurement Tabs -->
+    <section class="py-6 bg-white shadow-sm sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto space-x-2 pb-2">
+                <a href="#manual" class="measurement-tab px-6 py-2 rounded-full whitespace-nowrap active">Manual Guide</a>
+                <a href="#video" class="measurement-tab px-6 py-2 rounded-full whitespace-nowrap">Video Tutorials</a>
+                <a href="#homevisit" class="measurement-tab px-6 py-2 rounded-full whitespace-nowrap">Home Visit</a>
+                <a href="#saved" class="measurement-tab px-6 py-2 rounded-full whitespace-nowrap">Saved Profiles</a>
+                <a href="#tips" class="measurement-tab px-6 py-2 rounded-full whitespace-nowrap">Pro Tips</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manual Measurement Guide -->
+    <section id="manual" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Manual Measurement Guide</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Follow these step-by-step instructions to take accurate measurements at home</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <!-- Measurement Steps -->
+                <div class="lg:w-2/3 lg:pr-12 mb-8 lg:mb-0">
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Before You Begin</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Use a flexible measuring tape (cloth or plastic)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Wear fitted clothing or undergarments for accurate measurements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Stand straight with arms relaxed at your sides</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Keep the measuring tape snug but not tight</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Have someone assist you for more accurate results</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Essential Measurements</h3>
+                    
+                    <!-- Measurement Step 1 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">1</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Chest/Bust</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">Measure around the fullest part of your chest/bust, keeping the tape parallel to the floor.</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Men's Shirt Size:</span>
+                                        <span class="text-blue-600 font-medium">Chest Measurement</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>S</span>
+                                        <span>36-38"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>M</span>
+                                        <span>39-41"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>L</span>
+                                        <span>42-44"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>XL</span>
+                                        <span>45-47"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1595425964079-6b5d3a1f3b0f" alt="Chest Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Measurement Step 2 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">2</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Waist</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">Measure around your natural waistline (where you normally wear your pants), keeping the tape slightly loose.</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Women's Dress Size:</span>
+                                        <span class="text-blue-600 font-medium">Waist Measurement</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>XS</span>
+                                        <span>24-26"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>S</span>
+                                        <span>27-29"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>M</span>
+                                        <span>30-32"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>L</span>
+                                        <span>33-35"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03" alt="Waist Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Measurement Step 3 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">3</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Hips</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">Measure around the fullest part of your hips, keeping the tape parallel to the floor.</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Common Hip Sizes:</span>
+                                        <span class="text-blue-600 font-medium">For Fitting Pants/Skirts</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Small</span>
+                                        <span>35-37"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Medium</span>
+                                        <span>38-40"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Large</span>
+                                        <span>41-43"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>X-Large</span>
+                                        <span>44-46"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b" alt="Hip Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Measurement Step 4 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">4</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Shoulder Width</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">Measure from the edge of one shoulder to the edge of the other shoulder, across your back.</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Common Shoulder Widths:</span>
+                                        <span class="text-blue-600 font-medium">For Shirts/Blouses</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Narrow</span>
+                                        <span>14-15"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Average</span>
+                                        <span>16-17"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Broad</span>
+                                        <span>18-19"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9" alt="Shoulder Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Measurement Step 5 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">5</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Sleeve Length</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">With arm slightly bent, measure from the shoulder point down to where you want the sleeve to end.</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Common Sleeve Lengths:</span>
+                                        <span class="text-blue-600 font-medium">For Shirts/Blouses</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Short</span>
+                                        <span>7-9"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Regular</span>
+                                        <span>23-25"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Long</span>
+                                        <span>26-28"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1595341595379-cf0f2a7ab4a3" alt="Sleeve Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Measurement Step 6 -->
+                    <div class="measurement-step border-l-4 border-blue-500 pl-6 mb-8 pb-6 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="step-number bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center mr-4 font-bold transition-all duration-300">6</div>
+                            <h4 class="text-xl font-semibold text-gray-800">Inseam (For Pants)</h4>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-1/2 mb-4 md:mb-0">
+                                <p class="text-gray-600 mb-4">Measure from the crotch to the bottom of the ankle (or where you want the pants to end).</p>
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-medium">Common Inseam Lengths:</span>
+                                        <span class="text-blue-600 font-medium">For Pants</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Short</span>
+                                        <span>28-30"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Regular</span>
+                                        <span>31-33"</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span>Long</span>
+                                        <span>34-36"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 flex justify-center">
+                                <img src="https://images.unsplash.com/photo-1561526116-e2460f4d40a8" alt="Inseam Measurement" class="rounded-lg h-48 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Download Measurement Charts</h4>
+                        <p class="text-gray-600 mb-4">Print our detailed measurement guides for different garment types:</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <a href="#" class="border border-gray-200 rounded-lg p-4 hover:bg-white transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                                    <span class="font-medium">Men's Shirt Measurement Chart</span>
+                                </div>
+                            </a>
+                            <a href="#" class="border border-gray-200 rounded-lg p-4 hover:bg-white transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                                    <span class="font-medium">Women's Blouse Measurement Chart</span>
+                                </div>
+                            </a>
+                            <a href="#" class="border border-gray-200 rounded-lg p-4 hover:bg-white transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                                    <span class="font-medium">Pants Measurement Chart</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Measurement Form -->
+                <div class="lg:w-1/3">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 sticky top-32">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Enter Your Measurements</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Garment Type</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Select garment type</option>
+                                    <option>Men's Shirt</option>
+                                    <option>Men's Pants</option>
+                                    <option>Women's Blouse</option>
+                                    <option>Women's Dress</option>
+                                    <option>Sherwani</option>
+                                    <option>Lehenga</option>
+                                    <option>Saree Blouse</option>
+                                    <option>Custom</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Chest/Bust (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Waist (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Hips (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Shoulder (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Sleeve (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Inseam (inches)</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Additional Notes</label>
+                                <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            
+                            <div class="flex space-x-3">
+                                <button type="button" class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium">Save Measurements</button>
+                                <button type="button" class="px-6 py-2 border border-gray-300 rounded-md hover:bg-gray-100 font-medium">Clear</button>
+                            </div>
+                        </form>
+                        
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3">Your Saved Profiles</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-100 rounded-md">
+                                    <div>
+                                        <span class="font-medium">Men's Shirt</span>
+                                        <span class="text-gray-600 text-sm block">Saved on 15 Oct 2023</span>
+                                    </div>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-100 rounded-md">
+                                    <div>
+                                        <span class="font-medium">Women's Dress</span>
+                                        <span class="text-gray-600 text-sm block">Saved on 10 Oct 2023</span>
+                                    </div>
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials Section -->
+    <section id="video" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Video Measurement Tutorials</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Watch our detailed video guides for different garment types</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-[56.25%]"> <!-- 16:9 Aspect Ratio -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">How to Measure for a Men's Shirt</h3>
+                        <p class="text-gray-600 mb-4">Step-by-step guide to measuring chest, waist, sleeve length, and more for a perfect shirt fit.</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>8 min video</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-[56.25%]"> <!-- 16:9 Aspect Ratio -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Women's Blouse Measurement Guide</h3>
+                        <p class="text-gray-600 mb-4">Learn how to accurately measure bust, waist, shoulder width for blouses and tops.</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>10 min video</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative pb-[56.25%]"> <!-- 16:9 Aspect Ratio -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Pants Measurement Tutorial</h3>
+                        <p class="text-gray-600 mb-4">Complete guide to measuring waist, hips, inseam, and outseam for perfectly fitted pants.</p>
+                        <div class="flex items-center text-gray-500 text-sm">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>7 min video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 font-medium inline-flex items-center">
+                    View All Video Guides
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Visit Section -->
+    <section id="homevisit" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1583744946564-b52d01e2da64" alt="Professional Measurement" class="rounded-lg shadow-md w-full max-w-md">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Measurement at Your Home</h2>
+                    <p class="text-gray-600 mb-6">Let our trained professionals take your measurements for perfectly fitted garments without leaving your home.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-user-tie text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Expert Measurers</h4>
+                                <p class="text-gray-600">Our trained professionals have years of experience in taking accurate measurements.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-calendar-check text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Flexible Scheduling</h4>
+                                <p class="text-gray-600">Book a time slot that works for you - mornings, evenings, or weekends.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-rupee-sign text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Affordable Service</h4>
+                                <p class="text-gray-600">Only ₹299 per visit, waived if you place an order worth ₹2000 or more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="booking.html" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-medium inline-flex items-center">
+                        Book Home Measurement
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saved Profiles Section -->
+    <section id="saved" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Saved Measurement Profiles</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Save your measurements for different garment types and reuse them for future orders</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Your Saved Profiles</h3>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm mt-2 md:mt-0">
+                        <i class="fas fa-plus mr-2"></i> Add New Profile
+                    </button>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Profile Name</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Garment Type</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Updated</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="font-medium text-gray-900">Work Shirts</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">Men's Formal Shirt</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">15 Oct 2023</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="font-medium text-gray-900">Casual Pants</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">Men's Chinos</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">10 Oct 2023</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="font-medium text-gray-900">Party Wear</div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">Women's Dress</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="text-gray-600">5 Oct 2023</span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <button class="px-6 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 font-medium">
+                        <i class="fas fa-download mr-2"></i> Export All Profiles
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro Tips Section -->
+    <section id="tips" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pro Tailor's Measurement Tips</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Expert advice to ensure your measurements are accurate for perfectly fitted garments</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ruler-combined text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Use the Right Tools</h3>
+                    <p class="text-gray-600">Always use a flexible measuring tape (cloth or plastic). Metal tapes can give inaccurate readings. If you don't have one, use a string and then measure it against a ruler.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Wear Proper Clothing</h3>
+                    <p class="text-gray-600">Wear fitted clothing or undergarments similar to what you'll wear with the garment. Bulky clothing can add inches to your measurements.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Stand Naturally</h3>
+                    <p class="text-gray-600">Stand straight but naturally, with arms relaxed at your sides. Don't suck in your stomach or puff out your chest - this will affect the fit.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tape text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Keep Tape Snug</h3>
+                    <p class="text-gray-600">The measuring tape should be snug against your body but not tight. You should be able to fit a finger between the tape and your body.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-repeat text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Measure Twice</h3>
+                    <p class="text-gray-600">Always take each measurement at least twice to ensure accuracy. If measurements differ, take a third measurement and use the average.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-friends text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Get Assistance</h3>
+                    <p class="text-gray-600">Have someone help you with measurements, especially for hard-to-reach areas like shoulder width and back measurements.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Common Measurement Mistakes to Avoid</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">1. Measuring Over Bulky Clothing</h4>
+                        <p class="text-gray-600">This can add unnecessary inches to your measurements, resulting in loose-fitting garments.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">2. Pulling the Tape Too Tight</h4>
+                        <p class="text-gray-600">This can make garments uncomfortably tight. The tape should be snug but not constricting.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">3. Incorrect Waist Measurement</h4>
+                        <p class="text-gray-600">Your natural waist is above your belly button, not where you wear your pants.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">4. Not Considering Posture</h4>
+                        <p class="text-gray-600">Stand naturally as you measure - slouching or standing unnaturally straight affects fit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Need Help With Measurements?</h2>
+            <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Our customer support team is available to answer any questions about taking measurements</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <a href="contact.html" class="px-8 py-4 bg-white text-blue-600 rounded-md hover:bg-gray-100 font-medium text-lg">Contact Support</a>
+                <a href="booking.html" class="px-8 py-4 border border-white text-white rounded-md hover:bg-blue-700 font-medium text-lg">Book Home Measurement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-cut text-2xl text-blue-400"></i>
+                        <span class="text-xl font-bold">StitchCraft</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Premium tailoring services at your doorstep across India.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#mens" class="text-gray-400 hover:text-white">Men's Wear</a></li>
+                        <li><a href="services.html#womens" class="text-gray-400 hover:text-white">Women's Wear</a></li>
+                        <li><a href="services.html#alterations" class="text-gray-400 hover:text-white">Alterations</a></li>
+                        <li><a href="services.html#repairs" class="text-gray-400 hover:text-white">Repairs</a></li>
+                        <li><a href="services.html#custom" class="text-gray-400 hover:text-white">Custom Tailoring</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partner With Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 StitchCraft. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Measurement tab active state
+        const measurementTabs = document.querySelectorAll('.measurement-tab');
+        measurementTabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                // Scroll to target section
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+                
+                // Update active tab
+                measurementTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Set first tab as active by default
+        if (measurementTabs.length > 0) {
+            measurementTabs[0].classList.add('active');
+        }
+    </script>
+</body>
+</html>
