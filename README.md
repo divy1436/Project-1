@@ -57,7 +57,7 @@ TailorConnect/
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend (Optional):** Node.js + Express (can be added)
-- **Database (Optional):** MongoDB or JSON (for booking data)
+- **Database (Optional):** MongoDB or JSON (for booking data)b
 
 ---
 
